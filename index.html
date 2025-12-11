@@ -3,74 +3,159 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GONGllGONG 홈페이지</title>
+  <title>GongllGong</title>
 
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="favicon.png" />
 </head>
-
 <body>
+  <!-- 배경 전자 오비트 캔버스 -->
+  <canvas id="orbit-bg"></canvas>
 
-  <!-- 🧱 1. 상단 영역: 로고 + 메뉴 + 햄버거 버튼 -->
-  <header>
-    <h1>GONGllGONG</h1>
-
-    <!-- 햄버거 버튼 -->
-    <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav>
-      <a href="#home">홈</a>
-      <a href="#about">소개</a>
-      <a href="#works">작업물</a>
-      <a href="#contact">연락하기</a>
-    </nav>
+  <!-- 상단 네비게이션 -->
+  <header class="site-header">
+    ...
+<body>
+  <!-- 상단 네비게이션 -->
+  <header class="site-header">
+    <div class="inner">
+      <div class="logo">GongllGong</div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">Philosophy</a>
+        <a href="#brands">Brands</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-
-  <!-- 🧱 2. 메인 영역 -->
-  <main>
-
-    <!-- (1) 메인 인사 섹션 -->
-    <section id="home">
-      <h2>안녕하세요! 권희연의 홈페이지입니다 🎉</h2>
-      <p>이 사이트는 HTML + CSS + JavaScript 연습을 위해 만들고 있어요.</p>
-      <!-- 여기에 나중에 버튼 동작(script.js) 넣을 거야 -->
-      <button id="colorToggle">배경 색 바꾸기</button>
+  <!-- 히어로 섹션 -->
+  <main id="home">
+    <section class="hero">
+      <div class="inner hero-inner">
+        <p class="hero-label">EXPERIMENTAL HOLDING COMPANY</p>
+        <h1 class="hero-title">
+          We make people<br />
+          <span class="accent">shine again.</span>
+        </h1>
+        <p class="hero-subtitle">
+          공일공은 사람들이 ‘진짜 하고 싶은 일’을 발견하고,<br />
+          그 상태로 존재할 수 있도록 돕는 실험적인 회사 그룹입니다.
+        </p>
+        <div class="hero-actions">
+          <a href="#about" class="btn-primary">공일공의 철학 보기</a>
+          <a href="#brands" class="btn-ghost">브랜드 구조 보기</a>
+        </div>
+      </div>
     </section>
 
-    <!-- (2) 소개 섹션 -->
-    <section id="about">
-      <h2>소개</h2>
-      <p>여기에 나에 대한 소개를 간단히 적을 수 있어요.</p>
+    <!-- 철학 섹션 -->
+    <section id="about" class="section">
+      <div class="inner">
+        <h2 class="section-title">Philosophy</h2>
+        <p class="section-kicker">FOR THE FREEDOM OF ALL EXISTENCE</p>
+
+        <div class="section-grid">
+          <p class="lead">
+            공일공의 가장 바깥 테두리는<br />
+            존재하는 모든 것의 <strong>자유</strong>와 <strong>평화</strong>에 대한 존중입니다.<br />
+            인간, 동물, 식물, 사물, 공간, 우주 먼지까지.
+          </p>
+          <p class="body">
+            우리는 모든 존재가 본래의 방향성을 가지고 태어난다고 믿습니다.
+            그러나 대부분의 사람들은 그 방향을 잃은 채 살아갑니다.
+            공일공은 그 잊힌 방향을 다시 감각하고, 언어화하고, 실제 삶으로
+            옮겨 갈 수 있도록 돕는 실험들을 설계합니다.
+          </p>
+          <p class="body">
+            이 회사의 창립자는 ‘정의할 수 없는 존재’로 남고자 합니다.
+            고정된 역할이나 직함이 아니라, 지금 여기에서 가장 진실한 방향으로
+            계속 이동하는 존재. 공일공은 그 움직임 위에 세워진 회사입니다.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- (3) 작업물 섹션 -->
-    <section id="works">
-      <h2>작업물</h2>
-      <ul>
-        <li>첫 번째 프로젝트</li>
-        <li>두 번째 프로젝트</li>
-      </ul>
+    <!-- 브랜드 / 계열사 섹션 -->
+    <section id="brands" class="section section-alt">
+      <div class="inner">
+        <h2 class="section-title">GongllGong Brands</h2>
+        <p class="section-kicker">SMALL STRUCTURE · DEEP GRAVITY</p>
+
+        <div class="brand-grid">
+          <article class="brand-card">
+            <h3>GongllGong Discovery</h3>
+            <p>
+              사람들이 ‘내가 진짜 뭐 좋아하지?’라는 질문을
+              다시 던지게 만드는 방향 탐색 프로젝트들.
+            </p>
+          </article>
+
+          <article class="brand-card">
+            <h3>GongllGong Studio</h3>
+            <p>
+              눈이 반짝이는 순간들을 기록하고,
+              이야기와 콘텐츠의 형태로 세상에 보내는 스튜디오.
+            </p>
+          </article>
+
+          <article class="brand-card">
+            <h3>GongllGong School</h3>
+            <p>
+              하고 싶은 일을 실제로 삶에 구현할 수 있도록
+              구조와 기술, 동료를 제공하는 느슨한 학교.
+            </p>
+          </article>
+
+          <article class="brand-card">
+            <h3>GongllGong Lab</h3>
+            <p>
+              아직 이름 붙일 수 없는 아이디어와 실험들을
+              안전하게 시도해보는 작은 연구실.
+            </p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- (4) 연락 섹션 -->
-    <section id="contact">
-      <h2>연락하기</h2>
-      <p>이메일: 90n9ll90n9@gmail.com</p>
-    </section>
+    <!-- Founder / Contact -->
+    <section id="contact" class="section">
+      <div class="inner contact-layout">
+        <div>
+          <h2 class="section-title">Founder</h2>
+          <p class="section-kicker">KWON HUI YEON</p>
+          <p class="body">
+            “나는 정의할 수 없는 존재로 남고 싶습니다.<br />
+            공일공은 그 문장 위에서 시작되었습니다.”
+          </p>
+          <p class="body subtle">
+            회사가 정확히 어떤 카테고리에 속하는지 설명하기보다,<br />
+            직접 만나 감도를 느껴보는 것이 더 정직하다고 믿습니다.
+          </p>
+          <a href="mailto:90n9ll90n9@gmail.com" class="btn-ghost">
+            90n9ll90n9@gmail.com
+          </a>
+        </div>
 
+        <div class="qr-wrapper">
+          <!-- 나중에 명함 QR 이미지를 여기 src에 넣어도 됨 -->
+          <!-- <img src="assets/founder-qr.png" alt="Founder QR" /> -->
+          <div class="qr-placeholder">
+            QR CODE
+          </div>
+          <p class="qr-caption">명함의 QR 이미지를 이 자리에 배치할 수 있어요.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- 🧱 3. 맨 아래 푸터 -->
-  <footer>
-    <p>© 2025 GONGllGONG. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="inner footer-inner">
+      <span>© GongllGong</span>
+      <span class="footer-meta">For the freedom of all existence.</span>
+    </div>
   </footer>
 
-  <!-- 동작 파일 (나중에 script.js에서 코드 작성) -->
   <script src="script.js"></script>
 </body>
 </html>
