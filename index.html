@@ -1,34 +1,66 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GONGllGONG Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GONGllGONG 홈페이지</title>
+
+  <!-- 디자인 파일 (다음 단계에서 만들 예정) -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- 상단 메뉴 -->
-  <header class="header">
-    <h1 class="logo">GONGllGONG</h1>
+  <!-- 🧱 1. 상단 영역: 로고 + 메뉴 -->
+  <header>
+    <h1>GONGllGONG</h1>
     <nav>
-      <a href="index.html">홈</a>
-      <a href="about.html">소개</a>
-      <a href="works.html">작업물</a>
-      <a href="contact.html">연락</a>
+      <a href="#home">홈</a>
+      <a href="#about">소개</a>
+      <a href="#works">작업물</a>
+      <a href="#contact">연락하기</a>
     </nav>
   </header>
 
-  <!-- 메인 소개 섹션 -->
-  <section class="hero">
-    <h2>안녕하세요! 권희연의 홈페이지입니다 🎉</h2>
-    <p>이 웹사이트는 GitHub Pages + 도메인 연결로 배포되었습니다.</p>
-  </section>
+  <!-- 🧱 2. 메인 영역 -->
+  <main>
 
-  <!-- 푸터 -->
-  <footer class="footer">
-    © 2025 GONGllGONG. All rights reserved.
+    <!-- (1) 메인 인사 섹션 -->
+    <section id="home">
+      <h2>안녕하세요! 권희연의 홈페이지입니다 🎉</h2>
+      <p>이 사이트는 HTML + CSS + JavaScript 연습을 위해 만들고 있어요.</p>
+      <!-- 여기에 나중에 버튼 동작(script.js) 넣을 거야 -->
+      <button id="colorToggle">배경 색 바꾸기</button>
+    </section>
+
+    <!-- (2) 소개 섹션 -->
+    <section id="about">
+      <h2>소개</h2>
+      <p>여기에 나에 대한 소개를 간단히 적을 수 있어요.</p>
+    </section>
+
+    <!-- (3) 작업물 섹션 -->
+    <section id="works">
+      <h2>작업물</h2>
+      <ul>
+        <li>첫 번째 프로젝트</li>
+        <li>두 번째 프로젝트</li>
+      </ul>
+    </section>
+
+    <!-- (4) 연락 섹션 -->
+    <section id="contact">
+      <h2>연락하기</h2>
+      <p>이메일: 90n9ll90n9@gmail.com</p>
+    </section>
+
+  </main>
+
+  <!-- 🧱 3. 맨 아래 푸터 -->
+  <footer>
+    <p>© 2025 GONGllGONG. All rights reserved.</p>
   </footer>
 
+  <!-- 동작 파일 (나중에 script.js에서 코드 작성) -->
+  <script src="script.js"></script>
 </body>
 </html>
