@@ -18,7 +18,8 @@ body {
   height: 100%;
   display: block;
   z-index: -1;
-  pointer-events: none;
+  pointer-events: auto; /* ← 중요: 클릭 가능하게 */
+  cursor: pointer;      /* 선택: 누를 수 있단 느낌 */
 }
 
 /* 화면 단위 */
